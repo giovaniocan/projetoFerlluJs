@@ -1,0 +1,408 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 0px;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header {
+    position: relative;
+    background: url(imagens/fundo\ header.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 3px;
+    height: 250px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px;
+    padding: 20px;
+    margin-top: 250px;
+    margin-bottom: 40px;
+    height: 90px;
+    background: #fadbebb4;
+    box-shadow: 
+        0 -30px 15px -5px #fadbeba1, 
+        0 19px 16px -5px rgba(201, 76, 170, 0.425); 
+}
+
+
+#logo-menor {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+}
+
+#logo {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; 
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+}
+
+.itens {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #444;
+    text-decoration: none;
+}
+
+.itens a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+}
+
+.itens:hover {
+    background-color: #ffccdc;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+}
+
+.procurar {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #910c57;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    width: 330px;
+    height: 20px;
+}
+
+.botao-pesquisa {
+    width: 2.5rem;
+    height: 2.3rem;
+    background-color: #A81469;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.icone-pesquisa {
+    width: 16px;
+    height: 16px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
+}
+
+
+.titulo1{
+    text-align: center;
+    margin: 40px 0 2px;
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
+    height: 65px;
+    margin-top: 200px;
+}
+
+.img-preta{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.img-preta img{
+    width: 340px;
+}
+
+.recentes-container, .secao2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.recentes, .destaques {
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #ffa9e586;
+    box-shadow: 0 6px 12px rgba(24, 22, 23, 0.1);
+    text-align: center;
+    width: 260px;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.recentes:hover, .destaques:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: 0.3s all;
+}
+
+.botao-recentes, .botao-destaques{
+    border: none;
+    background: none;
+}
+
+.img-recentes, .img-destaques {
+    width: 250px;
+    height: 310px;
+    border-radius: 30px;
+}
+
+.seta-botao {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.img-seta {
+    width: 20px;
+    height: 20px;
+    color: #949191c2;
+}
+
+p{
+    font-size: 14px;
+    color: #666;
+}
+
+.veja-mais{
+    border: none;
+    background: #861154e3;
+    border-radius: 16px;
+    padding: 10px;
+    color: #fff;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.botoes-cuidados {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.cuidados {
+    box-shadow: 0 10px 15px  rgba(99, 64, 88, 0.425);
+    height: 45px;
+    background-color: #ffffff;
+    color: #773636;
+    border-radius: 20px;
+    border: 1px, solid, #99224a;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.cuidados:hover {
+    background-color: #fadbeb;
+    color: #773636;
+    transition: 0.10s all;
+}
+
+footer {
+    margin: 10rem;
+}
+
+.main-content-footer {
+    border-bottom: 1px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-footer {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.section-bottom-footer {
+    display: flex;
+    padding-top: 4px;
+}
+
+.lower-footer {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.pink-text {
+    padding-top: 10px;
+    margin-left: 320px;
+    font-size: 20px;
+    color: #9A1E5A;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.logos {
+    width: 30px;
+    height: 30px;
+}
+
+.itens-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+}
+
+
+.itens-footer p{
+    text-align: justify;
+}
+
+#botao-fixo {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    background: #fdeaea;
+    color: #fff;
+    border: none;
+    padding: 3px 3px;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#botao-fixo:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3px;
+        height: 100px;
+    }
+    .pesquisar {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .procurar {
+        width: calc(100% - 42px);
+    }
+    .botao-pesquisa {
+        width: 42px;
+    }
+    .lista {
+        width: 89%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+    .itens {
+        margin-left: -30px;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .recentes, .destaques {
+        width: 70%;
+    }
+    .img-preta img {
+        width: 240px;
+    }
+    .seta {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .procurar {
+        width: 100%;
+        height: 16px;
+        border-radius: 12px 0 0 12px;
+    }
+    .botao-pesquisa {
+        border-radius: 0 20px 20px 0;
+        
+    }
+    .pesquisar {
+        width: 100%;
+    }
+    .recentes, .destaques {
+        width: 90%;
+        margin: 20px;
+    }
+    .img-preta img {
+        width: 180px;
+    }
+    .seta {
+        width: 100%;
+        display: none;
+     
+    }
+
+    footer {
+        margin: 2rem;
+    }
+
+    .main-content-footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+
+    .section-bottom-footer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .itens-footer {
+        display: flex;
+        align-items: start;
+        
+        gap: 0.5rem;
+        margin-bottom: 20px;
+    }
+
+    .pink-text {
+        padding-top: 10px;
+        margin-left: 0rem;
+        font-size: 1.5rem;
+        color: #9A1E5A;
+        font-family: 'Architects Daughter', cursive;
+    }
+}

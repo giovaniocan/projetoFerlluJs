@@ -1,0 +1,338 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    background: url(imagens/fundo\ header.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 3px;
+    height: 250px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 250px;
+    margin-bottom: 40px;
+    height: 90px;
+    background: #fadbebb4;
+    box-shadow: 
+        0 -30px 15px -5px #fadbeba1, 
+        0 19px 16px -5px rgba(201, 76, 170, 0.425); 
+}
+
+#logo-menor {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+}
+
+#logo {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; 
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+}
+
+.itens {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #444;
+    text-decoration: none;
+}
+
+.itens a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+}
+
+
+.itens:hover {
+    background-color: #ffccdc;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+}
+
+.procurar {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #910c57;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    width: 330px;
+    height: 20px;
+}
+
+.botao-pesquisa {
+    width: 2.5rem;
+    height: 2.3rem;
+    background-color: #A81469;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.icone-pesquisa {
+    width: 16px;
+    height: 16px;
+}
+
+.titulo, .titulo1 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
+}
+
+.img-preta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    margin-top: 200px;
+}
+
+.img-preta img {
+    width: 340px;
+}
+
+.title-servicos {
+    text-align: left;
+    margin: 0 200px;
+    color: #99224a;
+    font-size: 25px;
+}
+
+.title-servicos hr {
+    margin: 50px 0;
+    height: 5px;
+    color: #fadbeb;
+    background-color: #fadbeb;
+    border-radius: 5px;
+}
+
+.vantagens b {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+.title-vantagens {
+    text-align: left;
+    margin-left: 200px;
+    color: #99224a;
+    font-size: 22px;
+}
+
+.content-servicos p {
+    font-size: 16px;
+    margin: 0 200px;
+    opacity: 75%;
+}
+
+footer {
+    margin: 10rem;
+}
+
+.main-content-footer {
+    border-bottom: 1px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-footer {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.section-bottom-footer {
+    display: flex;
+    padding-top: 4px;
+}
+
+.lower-footer {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pink-text {
+    padding-top: 10px;
+    margin-left: 320px;
+    font-size: 20px;
+    color: #9A1E5A;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.logos {
+    width: 30px;
+    height: 30px;
+}
+
+.itens-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.itens-footer p {
+    text-align: justify;
+}
+
+#botao-fixo {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    background: #fdeaea;
+    color: #fff;
+    border: none;
+    padding: 3px 3px;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#botao-fixo:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .title-servicos, .content-servicos p {
+        margin: 0 100px;
+    }
+
+    .pink-text {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3px;
+        height: 100px;
+    }
+    .pesquisar {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .procurar {
+        width: calc(100% - 42px);
+    }
+    .botao-pesquisa {
+        width: 42px;
+    }
+    .lista {
+        width: 89%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+    .itens {
+        margin-left: -30px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .recentes, .destaques {
+        width: 70%;
+    }
+    .img-preta img {
+        width: 240px;
+    }
+    .seta {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .procurar {
+        width: 100%;
+        height: 16px;
+        border-radius: 12px 0 0 12px;
+    }
+    .botao-pesquisa {
+        border-radius: 0 20px 20px 0;
+    }
+    .pesquisar {
+        width: 100%;
+    }
+    .recentes, .destaques {
+        width: 90%;
+        margin: 20px;
+    }
+    .img-preta img {
+        width: 180px;
+    }
+    .seta {
+        display: none;
+    }
+
+    footer {
+        margin: 2rem;
+    }
+
+    .main-content-footer {
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+
+    .section-bottom-footer {
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .itens-footer {
+        align-items: start;
+        gap: 0.5rem;
+        margin-bottom: 20px;
+    }
+
+    .pink-text {
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+    .title-servicos, .content-servicos p, .title-vantagens {
+        margin: 0 20px;
+    }
+}
+
