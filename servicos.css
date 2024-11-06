@@ -15,6 +15,14 @@ header {
     height: 250px;
 }
 
+hr {
+    margin: 50px 200px;
+    height: 5px;
+    color: #fadbeb;
+    background-color: #fadbeb;
+    border-radius: 5px;
+}
+
 #nav {
     display: flex;
     justify-content: space-around;
