@@ -4,7 +4,6 @@ window.addEventListener('load', async () => {
     const requisicao = await fetch(URL, {
         method: "GET",
     });
-   
 
     const resposta = await requisicao.json();
 
