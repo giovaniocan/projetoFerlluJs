@@ -32,6 +32,7 @@ window.addEventListener('load', async () => {
                 const btnVejaMais = document.createElement('button');
                 btnVejaMais.classList.add('veja-mais');
                 btnVejaMais.innerText = "Veja Mais";
+                btnVejaMais.style.cursor = 'pointer';
 
                 divRecentes.appendChild(buttonRecentes);
                 divRecentes.appendChild(h1Recentes);
@@ -74,6 +75,7 @@ window.addEventListener('load', async () => {
                 const btnVejaMais = document.createElement("button")
                 btnVejaMais.classList.add('veja-mais')
                 btnVejaMais.innerText = "Veja Mais"
+                btnVejaMais.style.cursor = 'pointer'
 
                 divDestaques.appendChild(btnDestaques)
                 divDestaques.appendChild(h1)
